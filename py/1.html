@@ -1,0 +1,1789 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+<html>
+<head>
+<title>Jupiterweb</title>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<link href="https://uspdigital.usp.br/comumwebdev/imagens/favicon.ico" rel="shortcut icon"
+	type="image/x-icon" />
+<link href="https://uspdigital.usp.br/comumwebdev/imagens/favicon.ico" rel="icon"
+	type="image/x-icon" />
+<link href="https://uspdigital.usp.br/comumwebdev/libs/usp/main/1.0/menuweb.css"
+	type=text/css rel=stylesheet>
+</head>
+<style>
+#layout_principal {
+	width: 100%;
+}
+
+#layout_cabecalho {
+
+}
+
+#layout_menu {
+	width: 170px;
+	float: left;
+	padding-top: 10px;
+}
+
+#layout_conteudo {
+	padding-left: 181px;
+	padding-top: 10px;
+}
+</style>
+<!--[if IE]>
+	<style>
+		#layout_conteudo {
+			padding-left: 10px;
+			padding-right: 2px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			overflow:auto;
+		}
+	</style>
+	<![endif]-->
+<body>
+
+	<div id="layout_principal">
+		<div id="layout_cabecalho">
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<style>
+	a.cabecalho_sair:active  {font-family:verdana; font-weight:bold; color:#FFFFFF; text-decoration:none;}
+	a.cabecalho_sair:link    {font-family:verdana; font-weight:bold; color:#FFFFFF; text-decoration:none;}
+	a.cabecalho_sair:visited {font-family:verdana; font-weight:bold; color:#FFFFFF; text-decoration:none;}
+	a.cabecalho_sair:hover   {font-family:verdana; font-weight:bold; color:#FFFFFF; text-decoration:underline;}
+
+	td.font_cabecalho1 {
+		font:bold 26px Tahoma;
+		color: #FFFFFF;
+	}
+	td.font_cabecalho2 {
+		font:bold 10px Arial;
+		color: #FFFFFF;
+	}
+	td.font_cabecalho3 {
+		font:normal 9px Verdana;
+		color: #FFFFFF;
+	}
+</style>
+
+<table width="100%" height="60" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="180" rowspan="3" align="center">
+			<a href="http://www.usp.br" target="_blank"><img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo.png" width="122" height="49" alt="" border="0" style="position: relative; top: -3px;" /></a>
+		</td>
+		<td>
+			<a href="http://www.usp.br" target="_blank"><img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo-texto.png" alt="" width="260" height="44" border="0" style="position: relative; top: 5px;" /></a>
+		</td>
+	</tr>
+</table>
+<div style="width: 100%; height: 14px; background-image: url('https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/bg-headtop.gif'); margin-bottom: 5px; text-align: right; color: white; padding-top: 12px; padding-right: 3px; font-family: Verdana; font-size: 10px;">
+	
+</div>
+
+		</div>
+
+		<div id="layout_menu">
+			<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+<!-- FreeStyle Menu v1.0RC by Angus Turnbull http://www.twinhelix.com -->
+<script type="text/javascript"
+	src="https://uspdigital.usp.br/comumwebdev/libs/javascript/fsmenu/1.0RC/fsmenu.js"></script>
+
+<!-- Demo CSS layouts for the list menu. Pick your favourite one and customise! -->
+<!-- Remove all but one and change "alternate stylesheet" to "stylesheet" to enable -->
+<link rel="stylesheet" type="text/css" id="listmenu-v"
+	href="https://uspdigital.usp.br/comumwebdev/libs/javascript/fsmenu/1.0RC/listmenu_v.css"
+	title="Vertical 'Earth'" />
+
+<!-- Fallback CSS menu file allows list menu operation when JS is disabled. -->
+<!-- This is automatically disabled via its ID when the script kicks in. -->
+<link rel="stylesheet" type="text/css" id="fsmenu-fallback"
+	href="https://uspdigital.usp.br/comumwebdev/libs/javascript/fsmenu/1.0RC/listmenu_fallback.css" />
+
+
+<script type="text/javascript">
+	//<![CDATA[
+
+	var arrow = null;
+	if (document.createElement && document.documentElement) {
+		//arrow = document.createElement('span');
+		//arrow.appendChild(document.createTextNode('>'));
+		// Feel free to replace the above two lines with these for a small arrow image...
+		arrow = document.createElement('img');
+		arrow.src = 'https://uspdigital.usp.br/comumwebdev/imagens/icones/11/arrow_sub1.gif';
+		arrow.style.borderWidth = '0';
+		arrow.className = 'subind';
+	}
+
+	if ("[{codmnu=9928, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=N, elmmnu=ETAPA VIRTUAL - MATRÍCULA DE INGRESSANTE, nomobtweb=graduacaoMatriculaIngressante, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoMatriculaIngressante?codmnu=9928}, {codmnu=9932, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=___________________, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=9932}, {codmnu=8620, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Lista de Convocados - SISU, nomobtweb=graduacaoSisuConsultaConvocado, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuConsultaConvocado?codmnu=8620}, {codmnu=8621, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Lista de Matriculados - SISU, nomobtweb=graduacaoSisuConsultaMatriculado, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuConsultaMatriculado?codmnu=8621}, {codmnu=8622, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Manifestação de Interesse - SISU, nomobtweb=graduacaoSisuManifestacaoInteresse, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuManifestacaoInteresse?codmnu=8622}, {codmnu=9420, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Classificação Lista de Espera - SISU, nomobtweb=graduacaoSisuConsultaClassifListaEspera, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuConsultaClassifListaEspera?codmnu=9420}, {codmnu=8619, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=N, elmmnu=____________________, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=Liberar quando algum menu acima estiver ativo, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=8619}, {codmnu=4525, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Calendário Escolar, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=4525}, {codmnu=7920, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=2019, nomobtweb=jupCalendario2019_final.jsp, pmeobtweb=null, dscmnu=null, codmnupai=4525, staabt=N, urlsie=null, numnivhie=2, linmnu=jupCalendario2019_final.jsp?codmnu=7920}, {codmnu=6863, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=2018, nomobtweb=jupCalendario2018_final.jsp, pmeobtweb=null, dscmnu=null, codmnupai=4525, staabt=N, urlsie=null, numnivhie=2, linmnu=jupCalendario2018_final.jsp?codmnu=6863}, {codmnu=8275, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Cursos de ingresso, nomobtweb=jupCarreira.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=jupCarreira.jsp?codmnu=8275}, {codmnu=4526, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Disciplina, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=4526}, {codmnu=6755, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Busca por Disciplinas, nomobtweb=jupDisciplinaBusca, pmeobtweb=tipo=D, dscmnu=null, codmnupai=4526, staabt=N, urlsie=null, numnivhie=2, linmnu=jupDisciplinaBusca?tipo=D&codmnu=6755}, {codmnu=6756, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Busca por Turmas, nomobtweb=jupDisciplinaBusca, pmeobtweb=tipo=T, dscmnu=null, codmnupai=4526, staabt=N, urlsie=null, numnivhie=2, linmnu=jupDisciplinaBusca?tipo=T&codmnu=6756}, {codmnu=6757, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Editais, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=6757}, {codmnu=6758, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Programa Unificado de Bolsas(PUB), nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=6757, staabt=N, urlsie=null, numnivhie=2, linmnu=index.jsp?codmnu=6758}, {codmnu=6759, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=N, elmmnu=Edital 2018-2019, nomobtweb=https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2018&codm, pmeobtweb=null, dscmnu=null, codmnupai=6758, staabt=N, urlsie=null, numnivhie=3, linmnu=https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2018&codm?codmnu=6759}, {codmnu=6762, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=PEEG, nomobtweb=http://www.prg.usp.br/?page_id=399, pmeobtweb=null, dscmnu=null, codmnupai=6757, staabt=N, urlsie=null, numnivhie=2, linmnu=http://www.prg.usp.br/?page_id=399?codmnu=6762}, {codmnu=7951, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=FAQ, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=7951}, {codmnu=7952, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Matrícula Interativa, nomobtweb=FAQ.jsp, pmeobtweb=null, dscmnu=null, codmnupai=7951, staabt=N, urlsie=null, numnivhie=2, linmnu=FAQ.jsp?codmnu=7952}, {codmnu=9326, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=FAQ, nomobtweb=FAQ.jsp, pmeobtweb=null, dscmnu=null, codmnupai=7952, staabt=N, urlsie=null, numnivhie=3, linmnu=FAQ.jsp?codmnu=9326}, {codmnu=9327, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Informações gerais, nomobtweb=grdMatriculainterativaInformacoes.jsp, pmeobtweb=null, dscmnu=null, codmnupai=7952, staabt=N, urlsie=null, numnivhie=3, linmnu=grdMatriculainterativaInformacoes.jsp?codmnu=9327}, {codmnu=8946, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=TUTORIAL - NOVA MATRÍCULA, nomobtweb=graduacaoAjudaNovaMatricula, pmeobtweb=null, dscmnu=Liberar próximo da matricula, codmnupai=7952, staabt=N, urlsie=null, numnivhie=3, linmnu=graduacaoAjudaNovaMatricula?codmnu=8946}, {codmnu=6749, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Jupiterweb em Vídeos, nomobtweb=http://www.prg.usp.br/, pmeobtweb=p=20746, dscmnu=null, codmnupai=7951, staabt=N, urlsie=null, numnivhie=2, linmnu=http://www.prg.usp.br/?p=20746&codmnu=6749}, {codmnu=8063, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Informações gerais sobre a Graduação, nomobtweb=http://www.prg.usp.br/, pmeobtweb=p=20741, dscmnu=null, codmnupai=7951, staabt=N, urlsie=null, numnivhie=2, linmnu=http://www.prg.usp.br/?p=20741&codmnu=8063}]" != null && "[{codmnu=9928, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=N, elmmnu=ETAPA VIRTUAL - MATRÍCULA DE INGRESSANTE, nomobtweb=graduacaoMatriculaIngressante, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoMatriculaIngressante?codmnu=9928}, {codmnu=9932, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=___________________, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=9932}, {codmnu=8620, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Lista de Convocados - SISU, nomobtweb=graduacaoSisuConsultaConvocado, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuConsultaConvocado?codmnu=8620}, {codmnu=8621, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Lista de Matriculados - SISU, nomobtweb=graduacaoSisuConsultaMatriculado, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuConsultaMatriculado?codmnu=8621}, {codmnu=8622, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Manifestação de Interesse - SISU, nomobtweb=graduacaoSisuManifestacaoInteresse, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuManifestacaoInteresse?codmnu=8622}, {codmnu=9420, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Classificação Lista de Espera - SISU, nomobtweb=graduacaoSisuConsultaClassifListaEspera, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=graduacaoSisuConsultaClassifListaEspera?codmnu=9420}, {codmnu=8619, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=N, elmmnu=____________________, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=Liberar quando algum menu acima estiver ativo, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=8619}, {codmnu=4525, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Calendário Escolar, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=4525}, {codmnu=7920, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=2019, nomobtweb=jupCalendario2019_final.jsp, pmeobtweb=null, dscmnu=null, codmnupai=4525, staabt=N, urlsie=null, numnivhie=2, linmnu=jupCalendario2019_final.jsp?codmnu=7920}, {codmnu=6863, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=2018, nomobtweb=jupCalendario2018_final.jsp, pmeobtweb=null, dscmnu=null, codmnupai=4525, staabt=N, urlsie=null, numnivhie=2, linmnu=jupCalendario2018_final.jsp?codmnu=6863}, {codmnu=8275, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Cursos de ingresso, nomobtweb=jupCarreira.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=jupCarreira.jsp?codmnu=8275}, {codmnu=4526, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Disciplina, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=4526}, {codmnu=6755, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Busca por Disciplinas, nomobtweb=jupDisciplinaBusca, pmeobtweb=tipo=D, dscmnu=null, codmnupai=4526, staabt=N, urlsie=null, numnivhie=2, linmnu=jupDisciplinaBusca?tipo=D&codmnu=6755}, {codmnu=6756, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Busca por Turmas, nomobtweb=jupDisciplinaBusca, pmeobtweb=tipo=T, dscmnu=null, codmnupai=4526, staabt=N, urlsie=null, numnivhie=2, linmnu=jupDisciplinaBusca?tipo=T&codmnu=6756}, {codmnu=6757, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Editais, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=6757}, {codmnu=6758, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Programa Unificado de Bolsas(PUB), nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=6757, staabt=N, urlsie=null, numnivhie=2, linmnu=index.jsp?codmnu=6758}, {codmnu=6759, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=N, elmmnu=Edital 2018-2019, nomobtweb=https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2018&codm, pmeobtweb=null, dscmnu=null, codmnupai=6758, staabt=N, urlsie=null, numnivhie=3, linmnu=https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2018&codm?codmnu=6759}, {codmnu=6762, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=PEEG, nomobtweb=http://www.prg.usp.br/?page_id=399, pmeobtweb=null, dscmnu=null, codmnupai=6757, staabt=N, urlsie=null, numnivhie=2, linmnu=http://www.prg.usp.br/?page_id=399?codmnu=6762}, {codmnu=7951, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=FAQ, nomobtweb=index.jsp, pmeobtweb=null, dscmnu=null, codmnupai=null, staabt=N, urlsie=null, numnivhie=1, linmnu=index.jsp?codmnu=7951}, {codmnu=7952, codgrpweb=191, nomgrpweb=Público, stapai=S, stavrfnivseg=S, elmmnu=Matrícula Interativa, nomobtweb=FAQ.jsp, pmeobtweb=null, dscmnu=null, codmnupai=7951, staabt=N, urlsie=null, numnivhie=2, linmnu=FAQ.jsp?codmnu=7952}, {codmnu=9326, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=FAQ, nomobtweb=FAQ.jsp, pmeobtweb=null, dscmnu=null, codmnupai=7952, staabt=N, urlsie=null, numnivhie=3, linmnu=FAQ.jsp?codmnu=9326}, {codmnu=9327, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Informações gerais, nomobtweb=grdMatriculainterativaInformacoes.jsp, pmeobtweb=null, dscmnu=null, codmnupai=7952, staabt=N, urlsie=null, numnivhie=3, linmnu=grdMatriculainterativaInformacoes.jsp?codmnu=9327}, {codmnu=8946, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=TUTORIAL - NOVA MATRÍCULA, nomobtweb=graduacaoAjudaNovaMatricula, pmeobtweb=null, dscmnu=Liberar próximo da matricula, codmnupai=7952, staabt=N, urlsie=null, numnivhie=3, linmnu=graduacaoAjudaNovaMatricula?codmnu=8946}, {codmnu=6749, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Jupiterweb em Vídeos, nomobtweb=http://www.prg.usp.br/, pmeobtweb=p=20746, dscmnu=null, codmnupai=7951, staabt=N, urlsie=null, numnivhie=2, linmnu=http://www.prg.usp.br/?p=20746&codmnu=6749}, {codmnu=8063, codgrpweb=191, nomgrpweb=Público, stapai=N, stavrfnivseg=S, elmmnu=Informações gerais sobre a Graduação, nomobtweb=http://www.prg.usp.br/, pmeobtweb=p=20741, dscmnu=null, codmnupai=7951, staabt=N, urlsie=null, numnivhie=2, linmnu=http://www.prg.usp.br/?p=20741&codmnu=8063}]" != '') {
+		// Here's a menu object to control the above list of menu data:
+		var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
+		listMenu.hideDelay = 800;
+		//listMenu.showDelay = 0;
+		//listMenu.switchDelay = 125;
+		//listMenu.cssLitClass = 'highlighted';
+		//listMenu.showOnClick = 0;
+		listMenu.hideOnClick = true;
+		listMenu.animInSpeed = 0.5;
+		listMenu.animOutSpeed = 0.5;
+		listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
+		listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
+		addReadyEvent(new Function(
+				'listMenu.activateMenu("listMenuRoot", arrow)'));
+	}
+
+	if ("false" != "false") {
+		var listMenu2 = new FSMenu('listMenu2', true, 'display', 'block',
+				'none');
+		listMenu2.hideDelay = 800;
+		listMenu2.hideOnClick = true;
+		listMenu2.animInSpeed = 0.5;
+		listMenu2.animOutSpeed = 0.5;
+		listMenu2.animations[listMenu2.animations.length] = FSMenu.animFade;
+		listMenu2.animations[listMenu2.animations.length] = FSMenu.animSwipeDown;
+		addReadyEvent(new Function(
+				'listMenu2.activateMenu("listMenuRoot2", arrow)'));
+	} else {
+		var listMenu3 = new FSMenu('listMenu3', true, 'display', 'block',
+				'none');
+		listMenu3.hideDelay = 800;
+		listMenu3.hideOnClick = true;
+		listMenu3.animInSpeed = 0.5;
+		listMenu3.animOutSpeed = 0.5;
+		listMenu3.animations[listMenu3.animations.length] = FSMenu.animFade;
+		listMenu3.animations[listMenu3.animations.length] = FSMenu.animSwipeDown;
+		addReadyEvent(new Function(
+				'listMenu3.activateMenu("listMenuRoot3", arrow)'));
+	}
+	//]]>
+</script>
+
+<!-- PUBLICO -->
+
+	
+	<ul class="menulist" id="listMenuRoot">
+		
+			
+				<li class="menuHeader">Público</li>
+			
+			
+
+	<li><a href='graduacaoMatriculaIngressante?codmnu=9928'
+		title=''>ETAPA VIRTUAL - MATRÍCULA DE INGRESSANTE</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='index.jsp?codmnu=9932'
+		title=''>___________________</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='graduacaoSisuConsultaConvocado?codmnu=8620'
+		title=''>Lista de Convocados - SISU</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='graduacaoSisuConsultaMatriculado?codmnu=8621'
+		title=''>Lista de Matriculados - SISU</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='graduacaoSisuManifestacaoInteresse?codmnu=8622'
+		title=''>Manifestação de Interesse - SISU</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='graduacaoSisuConsultaClassifListaEspera?codmnu=9420'
+		title=''>Classificação Lista de Espera - SISU</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='index.jsp?codmnu=8619'
+		title='Liberar quando algum menu acima estiver ativo'>____________________</a></li>
+
+
+
+
+
+			
+			
+
+
+	<li><a href='#' title=''><span>Calendário Escolar</span></a>
+		<ul>
+
+
+
+
+			
+			
+
+	<li><a href='jupCalendario2019_final.jsp?codmnu=7920'
+		title=''>2019</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='jupCalendario2018_final.jsp?codmnu=6863'
+		title=''>2018</a></li>
+
+
+
+
+
+			
+			
+				
+	</ul>
+	</li>
+	
+
+
+	<li><a href='jupCarreira.jsp?codmnu=8275'
+		title=''>Cursos de ingresso</a></li>
+
+
+
+
+
+			
+			
+
+
+	<li><a href='#' title=''><span>Disciplina</span></a>
+		<ul>
+
+
+
+
+			
+			
+
+	<li><a href='jupDisciplinaBusca?tipo=D&amp;codmnu=6755'
+		title=''>Busca por Disciplinas</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='jupDisciplinaBusca?tipo=T&amp;codmnu=6756'
+		title=''>Busca por Turmas</a></li>
+
+
+
+
+
+			
+			
+				
+	</ul>
+	</li>
+	
+
+
+
+	<li><a href='#' title=''><span>Editais</span></a>
+		<ul>
+
+
+
+
+			
+			
+
+
+	<li><a href='#' title=''><span>Programa Unificado de Bolsas(PUB)</span></a>
+		<ul>
+
+
+
+
+			
+			
+
+	<li><a href='https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&amp;anoprg=2018&amp;codm?codmnu=6759'
+		title=''>Edital 2018-2019</a></li>
+
+
+
+
+
+			
+			
+				
+	</ul>
+	</li>
+	
+
+
+	<li><a href='http://www.prg.usp.br/?page_id=399?codmnu=6762'
+		title=''>PEEG</a></li>
+
+
+
+
+
+			
+			
+				
+	</ul>
+	</li>
+	
+
+
+
+	<li><a href='#' title=''><span>FAQ</span></a>
+		<ul>
+
+
+
+
+			
+			
+
+
+	<li><a href='#' title=''><span>Matrícula Interativa</span></a>
+		<ul>
+
+
+
+
+			
+			
+
+	<li><a href='FAQ.jsp?codmnu=9326'
+		title=''>FAQ</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='grdMatriculainterativaInformacoes.jsp?codmnu=9327'
+		title=''>Informações gerais</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='graduacaoAjudaNovaMatricula?codmnu=8946'
+		title='Liberar próximo da matricula'>TUTORIAL - NOVA MATRÍCULA</a></li>
+
+
+
+
+
+			
+			
+				
+	</ul>
+	</li>
+	
+
+
+	<li><a href='http://www.prg.usp.br/?p=20746&amp;codmnu=6749'
+		title=''>Jupiterweb em Vídeos</a></li>
+
+
+
+
+
+			
+			
+
+	<li><a href='http://www.prg.usp.br/?p=20741&amp;codmnu=8063'
+		title=''>Informações gerais sobre a Graduação</a></li>
+
+
+
+	
+		</ul>
+		</li>
+	
+		</ul>
+		</li>
+	
+
+
+
+</ul>
+<div style="font-size: 7px">&nbsp;</div>
+
+
+<!-- NAO AUTENTICADO -->
+
+	<ul class="menulist" id="listMenuRoot3">
+		<li class="menuHeader">Acesso Restrito</li>
+		<li><a href='webLogin.jsp'>Entrar</a></li>
+		<li><a href='esqueciSenha'>Esqueci a Senha</a></li>
+		<li><a href='primeiroAcesso'>Primeiro Acesso</a></li>
+	</ul>
+	<div style="font-size: 7px">&nbsp;</div>
+
+
+<!-- AUTENTICADO -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+		</div>
+
+		<div id="layout_conteudo">
+			
+
+			
+
+			
+			
+				
+			
+
+			
+				
+
+
+
+<html>
+
+   
+   
+   
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/usp/util/1.0/util.css"/>
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/jqueryui/1.8.24/temas/ui-lightness/jquery-ui.css"/>
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/validationEngine/2.6.2/jquery.validationEngine.css"/>
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/jqGrid/4.4.3/ui.jqgrid.css"/>
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/fancybox/1.3.4/jquery.fancybox.css"/>
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/maxlength/2.0.1/jquery.maxlength.css"/>
+<link type="text/css" rel="stylesheet" href="/jupiterweb/css/jupiterweb.css" >
+<link type="text/css" rel="stylesheet" href="/jupiterweb/css/comum.css" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- HTML 5 Tags para IE8 -->
+<!--[if lt IE 9]>
+	   <script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	      document.createElement('section');
+	      document.createElement('article');
+	      document.createElement('aside');
+	      document.createElement('footer');
+	   </script>
+	<![endif]-->
+	
+<script type='text/javascript' src="usp-ga.js"></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jqueryui/1.8.24/jquery-ui.min.js'></script>
+<script type="text/javascript"
+	src="https://uspdigital.usp.br/comumwebdev/libs/jqueryui/1.8.24/jquery.ui.datepicker-pt-BR.min.js"></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/blockUI/2.36/jquery.blockUI.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/fancybox/1.3.4/jquery.fancybox.js'></script>
+<script type="text/javascript"
+	src="https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/fancybox/1.3.4/jquery.mousewheel.min.js"></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/validationEngine/2.6.2/jquery.validationEngine.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/validationEngine/2.6.2/jquery.validationEngine-pt.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/jqGrid/4.4.3/jquery.jqGrid.min.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/jqGrid/4.4.3/grid.locale-pt-br.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/simplemodal/1.4.4/jquery.simplemodal.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/exists/0.1/jquery.exists.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/maskedInput/1.2.2/jquery.maskedinput.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/maxlength/2.0.1/jquery.plugin.min.js'></script>
+<script type='text/javascript'
+	src='https://uspdigital.usp.br/comumwebdev/libs/jquery/plugins/maxlength/2.0.1/jquery.maxlength.min.js'></script>
+<script type="text/javascript"
+	src="https://uspdigital.usp.br/comumwebdev/libs/javascript/ckeditor/4.4.7/ckeditor.js"></script>
+<script type="text/javascript"
+	src="https://uspdigital.usp.br/comumwebdev/libs/javascript/ckeditor/4.4.7/adapters/jquery.js"></script>
+<script type="text/javascript"
+	src="https://uspdigital.usp.br/comumwebdev/libs/usp/util/1.0/util.js"></script>
+<script type='text/javascript' src="/jupiterweb/dwr/engine.js"></script>
+<script type='text/javascript' src="/jupiterweb/dwr/util.js"></script>
+<script type='text/javascript' src="/jupiterweb/javascript/usp-exception-dwr.js"></script>
+<script type='text/javascript' src="/jupiterweb/javascript/comum.js"></script>
+<script type='text/javascript' src="/jupiterweb/javascript/jupiterweb.js"></script>
+
+<STYLE>
+#simplemodal-container a.modalCloseImg {
+	background:
+		url(images/jquery/jquery.simple.modal/x.png)
+		no-repeat; /* adjust url as required */
+}
+</STYLE>
+
+
+
+<style>
+a.link_cabecalho:active {
+	font-family: verdana;
+	font-size: 10px;
+	color: olive;
+	text-decoration: none
+}
+
+a.link_cabecalho:link {
+	font-family: verdana;
+	font-size: 10px;
+	color: olive;
+	text-decoration: none
+}
+
+a.link_cabecalho:visited {
+	font-family: verdana;
+	font-size: 10px;
+	color: olive;
+	text-decoration: none
+}
+
+a.link_cabecalho:hover {
+	font-family: verdana;
+	font-size: 10px;
+	color: gray;
+	text-decoration: underline
+}
+
+#my_web_cabecalho {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: left;
+	width: 90%;
+	border-bottom: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #666666;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+#my_web_cabecalho_descricao {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+</style>
+</head>
+
+
+	
+
+
+<div id="my_web_cabecalho">
+	Unidades de Ensino
+</div>
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+	<br>
+
+
+<table align="center" width="500">
+  <tr> 
+	<td><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><span class="txt_arial_10pt_black">       
+	  <b>Selecione uma Unidade de Ensino:</b>       
+	  </span></font>
+	</td>
+  </tr align="center" width="500">
+</table>
+<BR>
+<table border="0" align="center" width="500" >
+  <tr bgcolor="#658CCF"> 
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="txt_verdana_10pt_white"> 
+      Código</span></font></td>
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="txt_verdana_10pt_white"> 
+      Nome</span></font></td>
+  </tr>
+  
+
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      86</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=86&tipo=D&nomclg=Escola+de+Artes,+Ciências+e+Humanidades" class="link_gray">Escola de Artes, Ciências e Humanidades</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      27</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=27&tipo=D&nomclg=Escola+de+Comunicações+e+Artes" class="link_gray">Escola de Comunicações e Artes</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      39</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=39&tipo=D&nomclg=Escola+de+Educação+Física+e+Esporte" class="link_gray">Escola de Educação Física e Esporte</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      98</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=98&tipo=D&nomclg=Escola+de+Educação+Física+e+Esporte+de+Ribeirão+Preto" class="link_gray">Escola de Educação Física e Esporte de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      7</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=7&tipo=D&nomclg=Escola+de+Enfermagem" class="link_gray">Escola de Enfermagem</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      22</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=22&tipo=D&nomclg=Escola+de+Enfermagem+de+Ribeirão+Preto" class="link_gray">Escola de Enfermagem de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      94</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=94&tipo=D&nomclg=Escola+de+Enfermagem+de+Ribeirão+Preto+e+Faculdade+de+Economia,+Administração+e+Contabilidade+de+Ribeirão+Preto" class="link_gray">Escola de Enfermagem de Ribeirão Preto e Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      88</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=88&tipo=D&nomclg=Escola+de+Engenharia+de+Lorena" class="link_gray">Escola de Engenharia de Lorena</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      18</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=18&tipo=D&nomclg=Escola+de+Engenharia+de+São+Carlos" class="link_gray">Escola de Engenharia de São Carlos</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      97</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=97&tipo=D&nomclg=Escola+de+Engenharia+de+São+Carlos+e+Instituto+de+Ciências+Matemáticas+e+de+Computação" class="link_gray">Escola de Engenharia de São Carlos e Instituto de Ciências Matemáticas e de Computação</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      3</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=3&tipo=D&nomclg=Escola+Politécnica" class="link_gray">Escola Politécnica</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      11</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=11&tipo=D&nomclg=Escola+Superior+de+Agricultura+"Luiz+de+Queiroz"" class="link_gray">Escola Superior de Agricultura "Luiz de Queiroz"</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      16</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=16&tipo=D&nomclg=Faculdade+de+Arquitetura+e+Urbanismo" class="link_gray">Faculdade de Arquitetura e Urbanismo</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      9</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=9&tipo=D&nomclg=Faculdade+de+Ciências+Farmacêuticas" class="link_gray">Faculdade de Ciências Farmacêuticas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      60</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=60&tipo=D&nomclg=Faculdade+de+Ciências+Farmacêuticas+de+Ribeirão+Preto" class="link_gray">Faculdade de Ciências Farmacêuticas de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      100</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=100&tipo=D&nomclg=Faculdade+de+Ciências+Farmacêuticas+e+Instituto+de+Ciências+Biomédicas" class="link_gray">Faculdade de Ciências Farmacêuticas e Instituto de Ciências Biomédicas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      2</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=2&tipo=D&nomclg=Faculdade+de+Direito" class="link_gray">Faculdade de Direito</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      89</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=89&tipo=D&nomclg=Faculdade+de+Direito+de+Ribeirão+Preto" class="link_gray">Faculdade de Direito de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      12</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=12&tipo=D&nomclg=Faculdade+de+Economia,+Administração+e+Contabilidade" class="link_gray">Faculdade de Economia, Administração e Contabilidade</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      81</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=81&tipo=D&nomclg=Faculdade+de+Economia,+Administração+e+Contabilidade+de+Ribeirão+Preto" class="link_gray">Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      48</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=48&tipo=D&nomclg=Faculdade+de+Educação" class="link_gray">Faculdade de Educação</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      59</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=59&tipo=D&nomclg=Faculdade+de+Filosofia,+Ciências+e+Letras+de+Ribeirão+Preto" class="link_gray">Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      96</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=96&tipo=D&nomclg=Faculdade+de+Filosofia,+Ciências+e+Letras+de+Ribeirão+Preto+e+Faculdade+de+Economia,+Administração+e+Contabilidade+de+Ribeirão+Preto" class="link_gray">Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto e Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      91</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=91&tipo=D&nomclg=Faculdade+de+Filosofia,+Ciências+e+Letras+de+Ribeirão+Preto+e+Faculdade+de+Medicina+de+Ribeirão+Preto" class="link_gray">Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto e Faculdade de Medicina de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      8</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=8&tipo=D&nomclg=Faculdade+de+Filosofia,+Letras+e+Ciências+Humanas" class="link_gray">Faculdade de Filosofia, Letras e Ciências Humanas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      5</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=5&tipo=D&nomclg=Faculdade+de+Medicina" class="link_gray">Faculdade de Medicina</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      17</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=17&tipo=D&nomclg=Faculdade+de+Medicina+de+Ribeirão+Preto" class="link_gray">Faculdade de Medicina de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      10</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=10&tipo=D&nomclg=Faculdade+de+Medicina+Veterinária+e+Zootecnia" class="link_gray">Faculdade de Medicina Veterinária e Zootecnia</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      67</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=67&tipo=D&nomclg=Faculdade+de+Medicina,+Instituto+de+Ciências+Biomédicas,+Instituto+de+Química+e+Instituto+de+Biociências" class="link_gray">Faculdade de Medicina, Instituto de Ciências Biomédicas, Instituto de Química e Instituto de Biociências</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      23</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=23&tipo=D&nomclg=Faculdade+de+Odontologia" class="link_gray">Faculdade de Odontologia</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      25</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=25&tipo=D&nomclg=Faculdade+de+Odontologia+de+Bauru" class="link_gray">Faculdade de Odontologia de Bauru</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      58</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=58&tipo=D&nomclg=Faculdade+de+Odontologia+de+Ribeirão+Preto" class="link_gray">Faculdade de Odontologia de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      95</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=95&tipo=D&nomclg=Faculdade+de+Odontologia+de+Ribeirão+Preto+e+Faculdade+de+Ciências+Farmacêuticas+de+Ribeirão+Preto" class="link_gray">Faculdade de Odontologia de Ribeirão Preto e Faculdade de Ciências Farmacêuticas de Ribeirão Preto</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      6</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=6&tipo=D&nomclg=Faculdade+de+Saúde+Pública" class="link_gray">Faculdade de Saúde Pública</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      102</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=102&tipo=D&nomclg=Faculdade+de+Saúde+Pública+e+Faculdade+de+Ciências+Farmacêuticas" class="link_gray">Faculdade de Saúde Pública e Faculdade de Ciências Farmacêuticas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      74</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=74&tipo=D&nomclg=Faculdade+de+Zootecnia+e+Engenharia+de+Alimentos" class="link_gray">Faculdade de Zootecnia e Engenharia de Alimentos</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      66</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=66&tipo=D&nomclg=Física+Médica+-+Instituto+de+Física+e+Faculdade+de+Medicina" class="link_gray">Física Médica - Instituto de Física e Faculdade de Medicina</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      61</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=61&tipo=D&nomclg=Hospital+de+Reabilitação+de+Anomalias+Craniofaciais" class="link_gray">Hospital de Reabilitação de Anomalias Craniofaciais</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      99</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=99&tipo=D&nomclg=Instituto+de+Arquitetura+e+Urbanismo+de+São+Carlos" class="link_gray">Instituto de Arquitetura e Urbanismo de São Carlos</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      14</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=14&tipo=D&nomclg=Instituto+de+Astronomia,+Geofísica+e+Ciências+Atmosféricas" class="link_gray">Instituto de Astronomia, Geofísica e Ciências Atmosféricas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      26</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=26&tipo=D&nomclg=Instituto+de+Astronomia,+Geofísica+e+Ciências+Atmosféricas+e+Instituto+de+Geociências" class="link_gray">Instituto de Astronomia, Geofísica e Ciências Atmosféricas e Instituto de Geociências</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      93</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=93&tipo=D&nomclg=Instituto+de+Astronomia,+Geofísica+e+Ciências+Atmosféricas+e+Instituto+Oceanográfico" class="link_gray">Instituto de Astronomia, Geofísica e Ciências Atmosféricas e Instituto Oceanográfico</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      41</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=41&tipo=D&nomclg=Instituto+de+Biociências" class="link_gray">Instituto de Biociências</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      92</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=92&tipo=D&nomclg=Instituto+de+Biociências+e+Centro+de+Biologia+Marinha" class="link_gray">Instituto de Biociências e Centro de Biologia Marinha</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      42</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=42&tipo=D&nomclg=Instituto+de+Ciências+Biomédicas" class="link_gray">Instituto de Ciências Biomédicas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      55</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=55&tipo=D&nomclg=Instituto+de+Ciências+Matemáticas+e+de+Computação" class="link_gray">Instituto de Ciências Matemáticas e de Computação</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      4</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=4&tipo=D&nomclg=Instituto+de+Energia+e+Ambiente" class="link_gray">Instituto de Energia e Ambiente</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      37</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=37&tipo=D&nomclg=Instituto+de+Estudos+Avançados" class="link_gray">Instituto de Estudos Avançados</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      43</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=43&tipo=D&nomclg=Instituto+de+Física" class="link_gray">Instituto de Física</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      76</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=76&tipo=D&nomclg=Instituto+de+Física+de+São+Carlos" class="link_gray">Instituto de Física de São Carlos</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      44</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=44&tipo=D&nomclg=Instituto+de+Geociências" class="link_gray">Instituto de Geociências</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      45</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=45&tipo=D&nomclg=Instituto+de+Matemática+e+Estatística" class="link_gray">Instituto de Matemática e Estatística</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      83</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=83&tipo=D&nomclg=Instituto+de+Medicina+Tropical+de+São+Paulo" class="link_gray">Instituto de Medicina Tropical de São Paulo</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      47</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=47&tipo=D&nomclg=Instituto+de+Psicologia" class="link_gray">Instituto de Psicologia</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      46</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=46&tipo=D&nomclg=Instituto+de+Química" class="link_gray">Instituto de Química</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      75</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=75&tipo=D&nomclg=Instituto+de+Química+de+São+Carlos" class="link_gray">Instituto de Química de São Carlos</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      101</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=101&tipo=D&nomclg=Instituto+de+Química+e+Faculdade+de+Ciências+Farmacêuticas" class="link_gray">Instituto de Química e Faculdade de Ciências Farmacêuticas</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      87</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=87&tipo=D&nomclg=Instituto+de+Relações+Internacionais" class="link_gray">Instituto de Relações Internacionais</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      21</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=21&tipo=D&nomclg=Instituto+Oceanográfico" class="link_gray">Instituto Oceanográfico</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      90</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=90&tipo=D&nomclg=Licenciatura+em+Ciências+Exatas+-+São+Carlos" class="link_gray">Licenciatura em Ciências Exatas - São Carlos</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      1</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=1&tipo=D&nomclg=Pró-Reitoria+de+Graduação++-+Cursos+Interunidades" class="link_gray">Pró-Reitoria de Graduação  - Cursos Interunidades</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      65</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=65&tipo=D&nomclg=Pró-Reitoria+de+Graduação+-+Licenciatura+em+Ciências+-+Semipresencial" class="link_gray">Pró-Reitoria de Graduação - Licenciatura em Ciências - Semipresencial</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+</table>
+
+<br>
+ 
+<table align="center" width="500">
+  <tr> 
+	<td><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><span class="txt_arial_10pt_black">       
+	  <b>Entidades que ministram disciplinas para Graduação:</b>       
+	  </span></font>
+	</td>
+  </tr align="center" width="500">
+</table>
+<BR>
+<table border="0" align="center" width="500" >
+  <tr bgcolor="#658CCF"> 
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="txt_verdana_10pt_white"> 
+      Código</span></font></td>
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="txt_verdana_10pt_white"> 
+      Nome</span></font></td>
+  </tr>
+
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      30</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=30&tipo=D&nomclg=Centro+de+Biologia+Marinha" class="link_gray">Centro de Biologia Marinha</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      64</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=64&tipo=D&nomclg=Centro+de+Energia+Nuclear+na+Agricultura" class="link_gray">Centro de Energia Nuclear na Agricultura</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      31</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=31&tipo=D&nomclg=Instituto+de+Estudos+Brasileiros" class="link_gray">Instituto de Estudos Brasileiros</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      85</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=85&tipo=D&nomclg=Instituto+de+Pesquisas+Energéticas+e+Nucleares" class="link_gray">Instituto de Pesquisas Energéticas e Nucleares</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      71</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=71&tipo=D&nomclg=Museu+de+Arqueologia+e+Etnologia" class="link_gray">Museu de Arqueologia e Etnologia</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      32</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=32&tipo=D&nomclg=Museu+de+Arte+Contemporânea" class="link_gray">Museu de Arte Contemporânea</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      38</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=38&tipo=D&nomclg=Museu+de+Zoologia" class="link_gray">Museu de Zoologia</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+  <tr> 
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+      33</span></font></td>
+    <td valign=top><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#666666"><span class="txt_arial_8pt_gray"> 
+		       
+		  
+			<A HREF="jupColegiadoMenu.jsp?codcg=33&tipo=D&nomclg=Museu+Paulista" class="link_gray">Museu Paulista</a> 
+		  	  
+	  
+      </span></font> </td>
+  </tr>
+  
+</table>
+
+
+
+
+
+
+
+
+
+	
+
+
+<link type="text/css" rel="stylesheet" href="https://uspdigital.usp.br/comumwebdev/libs/usp/main/1.0/home.css"/>
+<table width="100%" border="0" cellspacing=" 0" cellpadding=" 0" align="center">
+  
+  <tr>
+    <td align="center"><font face="Arial, Helvetica, sans-serif" size="1"><hr size="1">
+      <a href='creditos.jsp' class="link_olive" target="_self">Cr&eacute;ditos</a>
+      | <a href="jupColegiadoEmailLista" class="link_olive">Fale conosco</a><br>
+      &copy; 1999 - 2019 - Superintend&ecirc;ncia de Tecnologia da Informa&ccedil;&atilde;o/USP</font>
+    </td>
+  </tr>
+</table>
+
+</html>
+
+
+			
+
+			
+		</div>
+	</div>
+
+</body>
+</html>
