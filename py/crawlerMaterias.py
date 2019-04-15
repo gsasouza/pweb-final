@@ -47,6 +47,18 @@ def getLink(html):
 
     return link
 
+def getFromLink(html):
+    """
+    Funcao que pega o conteudo de uma ancora. 
+
+    Nao eh possivel apenas usar a funcao trim pois cada ancora tem a referencia dentro da propria tag.
+    """
+    text = html.lower().split("<a ")[1]
+    start = text.find('>') + 1
+    end = text.find('<')
+
+    return text[start:end]
+
 def getUniversitySchools(HTML):
     """
     Passa pelo HTML pegando todos os links para pesquisa de materias por instituicao
@@ -97,11 +109,15 @@ def getSubjects(HTML):
     #pega as linhas da unica tabela presente na pagina
     table_tag = '<TABLE align="center">'
     tables = trim(HTML, table_tag)
-    rows = trim(tables[0], "<TRA Cidade Constitucional>")
+    rows = trim(tables[0], "<TR>")
 
     #Pega o primeiro e o segundo valor da linha
     td_tag = '<span class="txt_arial_8pt_gray">'
-    subjects = [trim(ROW, td_tag) for ROW in rows]
+    subjects = [trim(ROW, td_tag)[0:2] for ROW in rows]
+    #o segundo valor da lista em subjects eh uma ancora, precisamos extrair o texto dela
+    for sub in subjects:
+        #como listas sempre apontam para a mesma regiao de memoria, alterando sub, alteramos a lista dentro de subjects tambem
+        sub[1] = getFromLink(sub[1])
     return subjects
 
 base_url = 'https://uspdigital.usp.br/jupiterweb/'
@@ -130,6 +146,7 @@ else:
             div = getSubjectDivisions(pagina.text)
             print(div)
         else:
-            subj = getSubjects(pagina.text)
-            print(subj)
+            subjects = getSubjects(pagina.text)
+            for sub in subjects:
+                print(sub)
         break
