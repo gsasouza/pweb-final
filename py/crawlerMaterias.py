@@ -58,24 +58,78 @@ def getUniversitySchools(HTML):
     tables = trim(HTML, table_tag)
     #pega as linhas da tabela
     rows = trim(tables[0], "<tr>") + trim(tables[1],"<tr>")
-    #encontra o link de cada linha das tabelas
-    links = [getLink(s) for s in rows]
-    return links
+    #encontra o ID de cada uma das linhas da tabela;
+    td_tag = '<span class="txt_arial_8pt_gray">'
+    #cada linha da tabela tem 2 entradas com a tag td_tag, entao pegamos somente a primeira
+    IDs = [trim(ROW, td_tag)[0] for ROW in rows]
+    return IDs
+
+def isDivided(HTML):
+    """
+    Faz uma busca pelo HTML da pagina, procurando uma tabela que indique que as disciplinas foram divididas
+
+    Essa eh a unica tabela cuja tag eh escrita com letras minusculas, e eh alinhado no centro
+    """
+    table_tag = '<table align="center">'
+    #se essa tag for encontrada, find retorna a posicao em que ela ocorre
+    #se a tag nao existe, retorna -1
+    return HTML.find(table_tag) > -1
+
+def getSubjectDivisions(HTML):
+    """
+    Faz uma busca pelo HTML da pagina, para encontrar subdivisoes das materias. 
+
+    Por exemplo, na primeira pagina, tem 5 separacoes: [A-D], [E-F], [G-N], [O-R] e [S-W]
+    """
+    #a lista de divisoes eh uma tabela que possui apenas uma linha
+    table_tag = '<table align="center">'
+    print(HTML[HTML.find('<table a'):HTML.find('<table a')+50])
+    tables = trim(HTML, table_tag)
+    return tables
 
 
-start_url = 'https://uspdigital.usp.br/jupiterweb/jupColegiadoLista?tipo=D'
+def getSubjects(HTML):
+    """
+    Passa pelo HTML pegando todos os nomes e codigos de disciplinas
+
+    A tabela de disciplinas tem todas as tags escritas com letras maiusculas
+    """
+    #pega as linhas da unica tabela presente na pagina
+    table_tag = '<TABLE align="center">'
+    tables = trim(HTML, table_tag)
+    rows = trim(tables[0], "<TRA Cidade Constitucional>")
+
+    #Pega o primeiro e o segundo valor da linha
+    td_tag = '<span class="txt_arial_8pt_gray">'
+    subjects = [trim(ROW, td_tag) for ROW in rows]
+    return subjects
+
+base_url = 'https://uspdigital.usp.br/jupiterweb/'
+start_url = 'jupColegiadoLista?'
+type_url = 'tipo=D'
+subject_url = 'jupDisciplinaLista?codcg='#inserir o ID de cada instituicao + '&' no final da URL
 
 #actual spidering done like this, under is just debugging
-#pagina = req.get(start_url)
-#if(pagina.status_code != 200):
-#    print(pagina.text)
-#else:
-#    tag = '<li>'
-#    for item in getUniversitySchools(pagina.text):
-#        print(item)
-
-#debug spidering
-with open("1.html") as f:
-    s = f.read()
-for line in getUniversitySchools(s):
-    print(line)
+pagina = req.get(base_url + start_url + type_url)
+if(pagina.status_code != 200):
+    print(pagina.status_code)
+else:
+    #lista todas as urls a serem requisitadas em busca de materias
+    #subject_url_list = [base_url + subject_url + str(ID) + '&' + type_url for ID in getUniversitySchools(pagina.text)]
+    subject_url_list = [base_url +subject_url + '58&' + type_url]
+    count = 0
+    for URL in subject_url_list:
+        #print(URL)
+        count += 1
+        pagina = req.get(URL)
+        if(not pagina.ok):
+            continue
+        #algumas paginas tem as disciplinas separadas por range de letras. 
+        #primeiro precisamos descobrir se a pagina tem essa subdivisao
+        if(isDivided(pagina.text)):
+            div = getSubjectDivisions(pagina.text)
+            print(div)
+        else:
+            subj = getSubjects(pagina.text)
+            print(subj)
+        break
