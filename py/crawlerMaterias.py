@@ -40,10 +40,9 @@ def getLink(html):
     Funcao que encontra o link em uma ancora
     """
     #encontra a primeira ancora e joga fora tudo que vem antes dela, incluindo o comeco da tag
-    link = html.lower().split("<a ")[1]
+    link = html.split("<A HREF=")[1]
 
-    link = link[link.find('href="') + len('href="'):]
-    link = link[:link.find('"')]
+    link = link[:link.find(' ')]
 
     return link
 
@@ -95,9 +94,12 @@ def getSubjectDivisions(HTML):
     """
     #a lista de divisoes eh uma tabela que possui apenas uma linha
     table_tag = '<table align="center">'
-    print(HTML[HTML.find('<table a'):HTML.find('<table a')+50])
     tables = trim(HTML, table_tag)
-    return tables
+    td_tag = '<td>'
+    data = trim(tables[0],td_tag)
+    #em cada entrada de data, existe um link que leva para uma das subdividoes das disciplinas
+    links = [getLink(s) for s in data]
+    return links
 
 
 def getSubjects(HTML):
@@ -125,28 +127,33 @@ start_url = 'jupColegiadoLista?'
 type_url = 'tipo=D'
 subject_url = 'jupDisciplinaLista?codcg='#inserir o ID de cada instituicao + '&' no final da URL
 
-#actual spidering done like this, under is just debugging
 pagina = req.get(base_url + start_url + type_url)
 if(pagina.status_code != 200):
     print(pagina.status_code)
 else:
-    #lista todas as urls a serem requisitadas em busca de materias
-    #subject_url_list = [base_url + subject_url + str(ID) + '&' + type_url for ID in getUniversitySchools(pagina.text)]
-    subject_url_list = [base_url +subject_url + '58&' + type_url]
-    count = 0
-    for URL in subject_url_list:
-        #print(URL)
-        count += 1
-        pagina = req.get(URL)
-        if(not pagina.ok):
-            continue
-        #algumas paginas tem as disciplinas separadas por range de letras. 
-        #primeiro precisamos descobrir se a pagina tem essa subdivisao
-        if(isDivided(pagina.text)):
-            div = getSubjectDivisions(pagina.text)
-            print(div)
-        else:
-            subjects = getSubjects(pagina.text)
+    with open('materias.csv','w') as f:
+        #lista todas as urls a serem requisitadas em busca de materias
+        subject_url_list = [base_url + subject_url + str(ID) + '&' + type_url for ID in getUniversitySchools(pagina.text)]
+        subjects = []
+        print(len(subject_url))
+        for URL in subject_url_list:
+            print(URL)
+            pagina = req.get(URL)
+            if(not pagina.ok):
+                continue
+            #algumas paginas tem as disciplinas separadas por range de letras. 
+            #primeiro precisamos descobrir se a pagina tem essa subdivisao
+            if(isDivided(pagina.text)):
+                divisions = getSubjectDivisions(pagina.text)
+                for div in divisions:
+                    pagina = req.get(base_url + div)
+                    if(not pagina.ok):
+                        print(pagina.status_code)
+                    else:
+                        for sub in getSubjects(pagina.text):
+                            subjects.append(sub)
+            else:
+                subjects = getSubjects(pagina.text)
+            #depois de encontrar todas as materias, escreve no arquivo
             for sub in subjects:
-                print(sub)
-        break
+                f.write(sub[0] + ',' + sub[1] + '\n')
