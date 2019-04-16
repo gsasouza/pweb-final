@@ -143,17 +143,20 @@ else:
                 continue
             #algumas paginas tem as disciplinas separadas por range de letras. 
             #primeiro precisamos descobrir se a pagina tem essa subdivisao
-            if(isDivided(pagina.text)):
-                divisions = getSubjectDivisions(pagina.text)
-                for div in divisions:
-                    pagina = req.get(base_url + div)
-                    if(not pagina.ok):
-                        print(pagina.status_code)
-                    else:
-                        for sub in getSubjects(pagina.text):
-                            subjects.append(sub)
-            else:
-                subjects = getSubjects(pagina.text)
-            #depois de encontrar todas as materias, escreve no arquivo
-            for sub in subjects:
-                f.write(sub[0] + ',' + sub[1] + '\n')
+            try:
+                if(isDivided(pagina.text)):
+                    divisions = getSubjectDivisions(pagina.text)
+                    for div in divisions:
+                        pagina = req.get(base_url + div)
+                        if(not pagina.ok):
+                            print(pagina.status_code)
+                        else:
+                            for sub in getSubjects(pagina.text):
+                                subjects.append(sub)
+                else:
+                    subjects = getSubjects(pagina.text)
+                #depois de encontrar todas as materias, escreve no arquivo
+                for sub in subjects:
+                    f.write(sub[0] + ',' + sub[1] + '\n')
+            except:
+                pass
